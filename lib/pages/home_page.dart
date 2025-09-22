@@ -56,7 +56,20 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
         ],
         body: TabBarView(
           controller: _tabController,
-          children: [],
+          children: [
+            ListView.builder(
+              itemCount: 5,
+              itemBuilder: (context, index) => Text("First tab items"),
+            ),
+            ListView.builder(
+              itemCount: 5,
+              itemBuilder: (context, index) => Text("Second tab items"),
+            ),
+            ListView.builder(
+              itemCount: 5,
+              itemBuilder: (context, index) => Text("Third tab items"),
+            ),
+          ],
         ),
       ),
     );
