@@ -71,7 +71,7 @@ class Restaurant {
       name: "Baklava",
       description:
       "Crispy layers of pastry filled with nuts and sweet syrup.",
-      imagePath: "lib/images/burgers/baklava.png",
+      imagePath: "lib/images/desserts/baklava.png",
       price: 5.99,
       category: FoodCategory.desserts,
       availableAddons: [
@@ -84,7 +84,7 @@ class Restaurant {
       name: "Chocolate Treat Layered Sweet Treat",
       description:
       "Decadent layers of chocolate, cream, and sponge cake for a rich treat.",
-      imagePath: "lib/images/burgers/chocolate_layered_sweet_treat.png",
+      imagePath: "lib/images/desserts/chocolate_layered_sweet_treat.png",
       price: 4.99,
       category: FoodCategory.desserts,
       availableAddons: [
@@ -97,7 +97,7 @@ class Restaurant {
       name: "Lotus Cheesecake",
       description:
       "Creamy cheesecake layered with Lotus Biscoff and a buttery biscuit base.",
-      imagePath: "lib/images/burgers/lotus_cheesecake.png",
+      imagePath: "lib/images/desserts/lotus_cheesecake.png",
       price: 4.99,
       category: FoodCategory.desserts,
       availableAddons: [
@@ -110,7 +110,7 @@ class Restaurant {
       name: "Oreo Cake Cups",
       description:
       "Creamy dessert cups layered with crushed Oreo cookies and chocolate.",
-      imagePath: "lib/images/burgers/oreo_cake_cups.png",
+      imagePath: "lib/images/desserts/oreo_cake_cups.png",
       price: 4.99,
       category: FoodCategory.desserts,
       availableAddons: [
@@ -123,7 +123,7 @@ class Restaurant {
       name: "Tiramisu",
       description:
       "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.",
-      imagePath: "lib/images/burgers/oreo_cake_cups.png",
+      imagePath: "lib/images/desserts/tiramisu.png",
       price: 5.99,
       category: FoodCategory.desserts,
       availableAddons: [
@@ -131,13 +131,136 @@ class Restaurant {
         Addon(name: "Vanilla Ice Cream", price: 2.99),
       ],
     ),
+    Food(
+      name: "Blood Orange Spitzer",
+      description:
+      "Refreshing sparkling drink with the tangy taste of blood orange and a hint of citrus zest.",
+      imagePath: "lib/images/drinks/blood_orange_Spritzer.png",
+      price: 3.99,
+      category: FoodCategory.drinks,
+      availableAddons: [
+        Addon(name: "Fresh Mint Leaves", price: 0.99),
+        Addon(name: "Sparkling Ice Cubes (extra fizzy)", price: 0.99),
+      ],
+    ),
+    Food(
+      name: "Lemonade",
+      description:
+      "Classic lemonade with a perfect balance of sweet and tangy, served refreshingly cold.",
+      imagePath: "lib/images/drinks/lemonade.png",
+      price: 2.99,
+      category: FoodCategory.drinks,
+      availableAddons: [
+        Addon(name: "Lemon Slice", price: 1.99),
+        Addon(name: "Fresh Berries", price: 1.99),
+        Addon(name: "Sparkling Ice Cubes (extra fizzy)", price: 0.99),
+      ],
+    ),
+    Food(
+      name: "Peach Summer Drink",
+      description:
+      "Sweet and juicy peach blended with sparkling water for a light, refreshing summer drink.",
+      imagePath: "lib/images/drinks/peach_summer_drink.png",
+      price: 3.99,
+      category: FoodCategory.drinks,
+      availableAddons: [
+        Addon(name: "Fresh Peach Slices", price: 1.99),
+        Addon(name: "Mint Leaves", price: 0.99),
+      ],
+    ),
+    Food(
+      name: "Strawberry Summer Drink",
+      description:
+      "Sweet and refreshing strawberry blended with sparkling water for the perfect summer sip.",
+      imagePath: "lib/images/drinks/strawberry_summer_drink.png",
+      price: 3.99,
+      category: FoodCategory.drinks,
+      availableAddons: [
+        Addon(name: "Fresh Strawberry Slices", price: 1.99),
+        Addon(name: "Mint Leaves", price: 0.99),
+        Addon(name: "Lemon Twist", price: 0.99),
+      ],
+    ),
+    Food(
+      name: "Orange Juice",
+      description:
+      "Sweet and refreshing strawberry blended with sparkling water for the perfect summer sip.",
+      imagePath: "lib/images/drinks/orange_juice.png",
+      price: 3.99,
+      category: FoodCategory.drinks,
+      availableAddons: [
+        Addon(name: "Fresh Orange Slices", price: 1.99),
+        Addon(name: "Mint Leaves", price: 0.99),
+      ],
+    ),
+    Food(
+      name: "Avocado Salad",
+      description:
+      "Fresh avocado mixed with crisp greens, cherry tomatoes, and a light citrus dressing.",
+      imagePath: "lib/images/salads/avocado_salad.png",
+      price: 6.99,
+      category: FoodCategory.salads,
+      availableAddons: [
+        Addon(name: "Extra Avocado Slices", price: 2.99),
+        Addon(name: "Grilled Chicken", price: 3.99),
+        Addon(name: "Salad Sauce", price: 1.99),
+      ],
+    ),
+    Food(
+      name: "Caesar Salad",
+      description:
+      "Crisp romaine lettuce tossed with creamy Caesar dressing, Parmesan cheese, and crunchy croutons.",
+      imagePath: "lib/images/salads/caesar_salad.png",
+      price: 6.99,
+      category: FoodCategory.salads,
+      availableAddons: [
+        Addon(name: "Grilled Chicken", price: 3.99),
+        Addon(name: "Extra Parmesan", price: 2.99),
+        Addon(name: "Boiled Egg", price: 1.99),
+      ],
+    ),
+    Food(
+      name: "Italian Salad",
+      description:
+      "Fresh mixed greens with cherry tomatoes, olives, red onions, and a tangy Italian vinaigrette.",
+      imagePath: "lib/images/salads/italian_salad.png",
+      price: 6.99,
+      category: FoodCategory.salads,
+      availableAddons: [
+        Addon(name: "Grilled Chicken", price: 3.99),
+        Addon(name: "EMozzarella Cheese", price: 2.99),
+        Addon(name: "Extra Olives", price: 1.99),
+      ],
+    ),
+    Food(
+      name: "Mediterranean Tuna Salad",
+      description:
+      "Fresh mixed greens topped with tuna, cherry tomatoes, cucumbers, olives, and a light Mediterranean dressing.",
+      imagePath: "lib/images/salads/mediterranean_tuna_salad.png",
+      price: 6.99,
+      category: FoodCategory.salads,
+      availableAddons: [
+        Addon(name: "Avocado Slices", price: 1.99),
+        Addon(name: "Feta Cheese", price: 2.99),
+        Addon(name: "Extra Tuna", price: 3.99),
+      ],
+    ),
+    Food(
+      name: "Rainbow Veggie Salad",
+      description:
+      "A colorful mix of fresh vegetables including bell peppers, carrots, cucumbers, and cherry tomatoes, served with a light vinaigrette.",
+      imagePath: "lib/images/salads/rainbow_veggie_salad.png",
+      price: 6.99,
+      category: FoodCategory.salads,
+      availableAddons: [
+        Addon(name: "Avocado Slices", price: 1.99),
+        Addon(name: "Nuts & Seeds Mix", price: 2.99),
+      ],
+    ),
 
 
 
 
-    //salads
-    //sides
-    //desserts
-    //drinks
+
   ];
 }
