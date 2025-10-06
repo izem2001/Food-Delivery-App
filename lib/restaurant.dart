@@ -1,8 +1,10 @@
+import 'package:flutter/material.dart';
 import 'package:food_delivery_app/models/food.dart';
 
-class Restaurant {
+class Restaurant extends ChangeNotifier{
   //list of food menu
   final List<Food> menu = [
+
     //burgers
     Food(
       name: "Bacon Avocado Burger",
@@ -67,6 +69,8 @@ class Restaurant {
         Addon(name: "Extra Sauce", price: 0.99),
       ],
     ),
+
+    //desserts
     Food(
       name: "Baklava",
       description:
@@ -131,6 +135,8 @@ class Restaurant {
         Addon(name: "Vanilla Ice Cream", price: 2.99),
       ],
     ),
+
+    //dirinks
     Food(
       name: "Blood Orange Spitzer",
       description:
@@ -193,6 +199,8 @@ class Restaurant {
         Addon(name: "Mint Leaves", price: 0.99),
       ],
     ),
+
+    //salads
     Food(
       name: "Avocado Salad",
       description:
@@ -258,9 +266,108 @@ class Restaurant {
       ],
     ),
 
-
-
-
+    //sides
+    Food(
+      name: "French Fries",
+      description:
+      "Crispy golden potato fries, perfectly seasoned and served hot — a classic favorite that pairs well with any meal.",
+      imagePath: "lib/images/salads/rainbow_veggie_salad.png",
+      price: 2.99,
+      category: FoodCategory.sides,
+      availableAddons: [
+        Addon(name: "Garlic Mayo Sauce", price: 0.99),
+        Addon(name: "Spicy Ketchup", price: 0.79),
+      ],
+    ),
+    Food(
+      name: "İçli Köfte",
+      description:
+      "Crispy bulgur shells stuffed with spiced minced meat and onions, served warm with authentic flavor.",
+      imagePath: "lib/images/salads/rainbow_veggie_salad.png",
+      price: 5.99,
+      category: FoodCategory.sides,
+      availableAddons: [
+        Addon(name: "Garlic Yogurt Sauce", price: 0.99),
+        Addon(name: "Lemon Wedges", price: 0.49),
+      ],
+    ),
+    Food(
+      name: "Onion Rings",
+      description:
+      "Crispy, golden-brown onion rings with a light, flavorful batter — perfect for snacking or as a side.",
+      imagePath: "lib/images/salads/rainbow_veggie_salad.png",
+      price: 2.99,
+      category: FoodCategory.sides,
+      availableAddons: [
+        Addon(name: "Cheese Dip", price: 1.49),
+        Addon(name: "Barbecue Sauce", price: 0.99),
+        Addon(name: "Garlic Mayo", price: 0.99)
+      ],
+    ),
+    Food(
+      name: "Zeytinyağlı Yaprak Sarma",
+      description:
+      "Tender grape leaves stuffed with a savory mix of rice, herbs, and spices — a light and flavorful Mediterranean classic.",
+      imagePath: "lib/images/salads/rainbow_veggie_salad.png",
+      price: 5.99,
+      category: FoodCategory.sides,
+      availableAddons: [
+        Addon(name: "Garlic Yogurt Sauce", price: 0.99),
+        Addon(name: "Lemon Wedges", price: 0.49),
+        Addon(name: "Olive Mix", price: 1.49)
+      ],
+    ),
+    Food(
+      name: "Vegan Sides",
+      description:
+      "A wholesome selection of plant-based sides made with fresh, seasonal ingredients — light, healthy, and full of flavor.",
+      imagePath: "lib/images/salads/rainbow_veggie_salad.png",
+      price: 4.99,
+      category: FoodCategory.sides,
+      availableAddons: [
+        Addon(name: "Avocado Slices", price: 1.99),
+        Addon(name: "Hummus Dip", price: 1.49),
+        Addon(name: "Roasted Nuts Mix", price: 2.49)
+      ],
+    ),
 
   ];
+
+
+  /*
+
+  G E T T E R S
+
+*/
+
+List<Food> get menu => _menu;
+
+/*
+
+  O P E R A T I O N S
+
+*/
+
+//add to card
+
+//remove from card
+
+//get total price of card
+
+//get total number of items in card
+
+//clear card
+
+/*
+
+  H E L P E R S
+
+*/
+
+//generate a receipt
+//format double value into money
+//format list of addons into a string summary
+
+
+
 }
