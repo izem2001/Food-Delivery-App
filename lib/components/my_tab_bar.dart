@@ -5,25 +5,23 @@ class MyTabBar extends StatelessWidget {
   final TabController tabController;
 
   const MyTabBar({
-    super.key,
+    Key? key,
     required this.tabController,
-  });
+  }) : super(key: key);
 
-  List<Tab> _buildCategoryTabs[] {
-    return FoodCategory.values.map((category){
+  List<Tab> _buildCategoryTabs() {
+    return FoodCategory.values.map((category) {
       return Tab(
-             text: category.toString().split('.').last,
+        text: category.toString().split('.').last,
       );
-  }).toList();
+    }).toList();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: TabBar(
-        controller: tabController,
-        tabs: _buildCategoryTabs(),
-      ),
+    return TabBar(
+      controller: tabController,
+      tabs: _buildCategoryTabs(),
     );
   }
 }

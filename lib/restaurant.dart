@@ -271,7 +271,7 @@ class Restaurant extends ChangeNotifier{
       name: "French Fries",
       description:
       "Crispy golden potato fries, perfectly seasoned and served hot — a classic favorite that pairs well with any meal.",
-      imagePath: "lib/images/salads/rainbow_veggie_salad.png",
+      imagePath: "lib/images/sides/french_fries.png",
       price: 2.99,
       category: FoodCategory.sides,
       availableAddons: [
@@ -283,7 +283,7 @@ class Restaurant extends ChangeNotifier{
       name: "İçli Köfte",
       description:
       "Crispy bulgur shells stuffed with spiced minced meat and onions, served warm with authentic flavor.",
-      imagePath: "lib/images/salads/rainbow_veggie_salad.png",
+      imagePath: "lib/images/sides/icli_kofte.png",
       price: 5.99,
       category: FoodCategory.sides,
       availableAddons: [
@@ -295,7 +295,7 @@ class Restaurant extends ChangeNotifier{
       name: "Onion Rings",
       description:
       "Crispy, golden-brown onion rings with a light, flavorful batter — perfect for snacking or as a side.",
-      imagePath: "lib/images/salads/rainbow_veggie_salad.png",
+      imagePath: "lib/images/sides/onion_rings.png",
       price: 2.99,
       category: FoodCategory.sides,
       availableAddons: [
@@ -308,7 +308,7 @@ class Restaurant extends ChangeNotifier{
       name: "Zeytinyağlı Yaprak Sarma",
       description:
       "Tender grape leaves stuffed with a savory mix of rice, herbs, and spices — a light and flavorful Mediterranean classic.",
-      imagePath: "lib/images/salads/rainbow_veggie_salad.png",
+      imagePath: "lib/images/sides/sarma.png",
       price: 5.99,
       category: FoodCategory.sides,
       availableAddons: [
@@ -321,7 +321,7 @@ class Restaurant extends ChangeNotifier{
       name: "Vegan Sides",
       description:
       "A wholesome selection of plant-based sides made with fresh, seasonal ingredients — light, healthy, and full of flavor.",
-      imagePath: "lib/images/salads/rainbow_veggie_salad.png",
+      imagePath: "lib/images/sides/vegan_sides.png",
       price: 4.99,
       category: FoodCategory.sides,
       availableAddons: [
@@ -340,7 +340,8 @@ class Restaurant extends ChangeNotifier{
 
 */
 
-List<Food> get menu => _menu;
+  List<Food> get menuList => menu;
+
 
 /*
 
