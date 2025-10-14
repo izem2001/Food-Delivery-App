@@ -1,10 +1,11 @@
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/models/card_item.dart';
 import 'package:food_delivery_app/models/food.dart';
 
-class Restaurant extends ChangeNotifier{
+class Restaurant extends ChangeNotifier {
   //list of food menu
   final List<Food> menu = [
-
     //burgers
     Food(
       name: "Bacon Avocado Burger",
@@ -73,8 +74,7 @@ class Restaurant extends ChangeNotifier{
     //desserts
     Food(
       name: "Baklava",
-      description:
-      "Crispy layers of pastry filled with nuts and sweet syrup.",
+      description: "Crispy layers of pastry filled with nuts and sweet syrup.",
       imagePath: "lib/images/desserts/baklava.png",
       price: 5.99,
       category: FoodCategory.desserts,
@@ -87,7 +87,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       name: "Chocolate Treat Layered Sweet Treat",
       description:
-      "Decadent layers of chocolate, cream, and sponge cake for a rich treat.",
+          "Decadent layers of chocolate, cream, and sponge cake for a rich treat.",
       imagePath: "lib/images/desserts/chocolate_layered_sweet_treat.png",
       price: 4.99,
       category: FoodCategory.desserts,
@@ -100,7 +100,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       name: "Lotus Cheesecake",
       description:
-      "Creamy cheesecake layered with Lotus Biscoff and a buttery biscuit base.",
+          "Creamy cheesecake layered with Lotus Biscoff and a buttery biscuit base.",
       imagePath: "lib/images/desserts/lotus_cheesecake.png",
       price: 4.99,
       category: FoodCategory.desserts,
@@ -113,7 +113,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       name: "Oreo Cake Cups",
       description:
-      "Creamy dessert cups layered with crushed Oreo cookies and chocolate.",
+          "Creamy dessert cups layered with crushed Oreo cookies and chocolate.",
       imagePath: "lib/images/desserts/oreo_cake_cups.png",
       price: 4.99,
       category: FoodCategory.desserts,
@@ -126,7 +126,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       name: "Tiramisu",
       description:
-      "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.",
+          "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.",
       imagePath: "lib/images/desserts/tiramisu.png",
       price: 5.99,
       category: FoodCategory.desserts,
@@ -140,7 +140,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       name: "Blood Orange Spitzer",
       description:
-      "Refreshing sparkling drink with the tangy taste of blood orange and a hint of citrus zest.",
+          "Refreshing sparkling drink with the tangy taste of blood orange and a hint of citrus zest.",
       imagePath: "lib/images/drinks/blood_orange_Spritzer.png",
       price: 3.99,
       category: FoodCategory.drinks,
@@ -152,7 +152,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       name: "Lemonade",
       description:
-      "Classic lemonade with a perfect balance of sweet and tangy, served refreshingly cold.",
+          "Classic lemonade with a perfect balance of sweet and tangy, served refreshingly cold.",
       imagePath: "lib/images/drinks/lemonade.png",
       price: 2.99,
       category: FoodCategory.drinks,
@@ -165,7 +165,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       name: "Peach Summer Drink",
       description:
-      "Sweet and juicy peach blended with sparkling water for a light, refreshing summer drink.",
+          "Sweet and juicy peach blended with sparkling water for a light, refreshing summer drink.",
       imagePath: "lib/images/drinks/peach_summer_drink.png",
       price: 3.99,
       category: FoodCategory.drinks,
@@ -177,7 +177,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       name: "Strawberry Summer Drink",
       description:
-      "Sweet and refreshing strawberry blended with sparkling water for the perfect summer sip.",
+          "Sweet and refreshing strawberry blended with sparkling water for the perfect summer sip.",
       imagePath: "lib/images/drinks/strawberry_summer_drink.png",
       price: 3.99,
       category: FoodCategory.drinks,
@@ -190,7 +190,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       name: "Orange Juice",
       description:
-      "Sweet and refreshing strawberry blended with sparkling water for the perfect summer sip.",
+          "Sweet and refreshing strawberry blended with sparkling water for the perfect summer sip.",
       imagePath: "lib/images/drinks/orange_juice.png",
       price: 3.99,
       category: FoodCategory.drinks,
@@ -204,7 +204,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       name: "Avocado Salad",
       description:
-      "Fresh avocado mixed with crisp greens, cherry tomatoes, and a light citrus dressing.",
+          "Fresh avocado mixed with crisp greens, cherry tomatoes, and a light citrus dressing.",
       imagePath: "lib/images/salads/avocado_salad.png",
       price: 6.99,
       category: FoodCategory.salads,
@@ -217,7 +217,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       name: "Caesar Salad",
       description:
-      "Crisp romaine lettuce tossed with creamy Caesar dressing, Parmesan cheese, and crunchy croutons.",
+          "Crisp romaine lettuce tossed with creamy Caesar dressing, Parmesan cheese, and crunchy croutons.",
       imagePath: "lib/images/salads/caesar_salad.png",
       price: 6.99,
       category: FoodCategory.salads,
@@ -230,7 +230,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       name: "Italian Salad",
       description:
-      "Fresh mixed greens with cherry tomatoes, olives, red onions, and a tangy Italian vinaigrette.",
+          "Fresh mixed greens with cherry tomatoes, olives, red onions, and a tangy Italian vinaigrette.",
       imagePath: "lib/images/salads/italian_salad.png",
       price: 6.99,
       category: FoodCategory.salads,
@@ -243,7 +243,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       name: "Mediterranean Tuna Salad",
       description:
-      "Fresh mixed greens topped with tuna, cherry tomatoes, cucumbers, olives, and a light Mediterranean dressing.",
+          "Fresh mixed greens topped with tuna, cherry tomatoes, cucumbers, olives, and a light Mediterranean dressing.",
       imagePath: "lib/images/salads/mediterranean_tuna_salad.png",
       price: 6.99,
       category: FoodCategory.salads,
@@ -256,7 +256,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       name: "Rainbow Veggie Salad",
       description:
-      "A colorful mix of fresh vegetables including bell peppers, carrots, cucumbers, and cherry tomatoes, served with a light vinaigrette.",
+          "A colorful mix of fresh vegetables including bell peppers, carrots, cucumbers, and cherry tomatoes, served with a light vinaigrette.",
       imagePath: "lib/images/salads/rainbow_veggie_salad.png",
       price: 6.99,
       category: FoodCategory.salads,
@@ -270,7 +270,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       name: "French Fries",
       description:
-      "Crispy golden potato fries, perfectly seasoned and served hot — a classic favorite that pairs well with any meal.",
+          "Crispy golden potato fries, perfectly seasoned and served hot — a classic favorite that pairs well with any meal.",
       imagePath: "lib/images/sides/french_fries.png",
       price: 2.99,
       category: FoodCategory.sides,
@@ -282,7 +282,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       name: "İçli Köfte",
       description:
-      "Crispy bulgur shells stuffed with spiced minced meat and onions, served warm with authentic flavor.",
+          "Crispy bulgur shells stuffed with spiced minced meat and onions, served warm with authentic flavor.",
       imagePath: "lib/images/sides/icli_kofte.png",
       price: 5.99,
       category: FoodCategory.sides,
@@ -294,7 +294,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       name: "Onion Rings",
       description:
-      "Crispy, golden-brown onion rings with a light, flavorful batter — perfect for snacking or as a side.",
+          "Crispy, golden-brown onion rings with a light, flavorful batter — perfect for snacking or as a side.",
       imagePath: "lib/images/sides/onion_rings.png",
       price: 2.99,
       category: FoodCategory.sides,
@@ -307,7 +307,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       name: "Zeytinyağlı Yaprak Sarma",
       description:
-      "Tender grape leaves stuffed with a savory mix of rice, herbs, and spices — a light and flavorful Mediterranean classic.",
+          "Tender grape leaves stuffed with a savory mix of rice, herbs, and spices — a light and flavorful Mediterranean classic.",
       imagePath: "lib/images/sides/sarma.png",
       price: 5.99,
       category: FoodCategory.sides,
@@ -320,7 +320,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       name: "Vegan Sides",
       description:
-      "A wholesome selection of plant-based sides made with fresh, seasonal ingredients — light, healthy, and full of flavor.",
+          "A wholesome selection of plant-based sides made with fresh, seasonal ingredients — light, healthy, and full of flavor.",
       imagePath: "lib/images/sides/vegan_sides.png",
       price: 4.99,
       category: FoodCategory.sides,
@@ -330,9 +330,7 @@ class Restaurant extends ChangeNotifier{
         Addon(name: "Roasted Nuts Mix", price: 2.49)
       ],
     ),
-
   ];
-
 
   /*
 
@@ -342,22 +340,88 @@ class Restaurant extends ChangeNotifier{
 
   List<Food> get menuList => menu;
 
-
 /*
 
   O P E R A T I O N S
 
 */
 
+  //user card
+
+  List<CardItem> _card = [];
+
 //add to card
+  void addToCard(Food food, List<Addon> selectedAddons) {
+    CardItem? cardItem = _card.firstWhereOrNull((item) {
+      //check if the food items are the same
+      bool isSameFood = item.food == food;
+
+      //check if the list of selected addons are the same
+      bool isSameAddons =
+          ListEquality().equals(item.selectedAddons, selectedAddons);
+
+      return isSameFood && isSameAddons;
+    });
+
+    if (cardItem != null) {
+      cardItem.quality++;
+    }
+    //otherwise, add a new card item to the card
+    else {
+      _card.add(
+        CardItem(
+          food: food,
+          selectedAddons: selectedAddons,
+        ),
+      );
+    }
+    notifyListeners();
+  }
 
 //remove from card
+void removeFromCard(CardItem cardItem){
+    int cardIndex = _card.indexOf(cardItem);
+
+    if (cardIndex != -1){
+      if (_card[cardIndex].quality > 1){
+        _card[cardIndex].quality--;
+      }else {
+        _card.removeAt(cardIndex);
+      }
+    }
+    notifyListeners();
+}
 
 //get total price of card
+double getTotalPrice(){
+    double total = 0.0;
+
+    for(CardItem cardItem in _card) {
+      double itemTotal = cardItem.food.price;
+
+      for(Addon addon in cardItem.selectedAddons){
+        itemTotal += addon.price;
+      }
+      total += itemTotal * cardItem.quality;
+    }
+    return total;
+}
 
 //get total number of items in card
+int getTotalItemCount(){
+    int totalItemCount = 0;
+
+    for(CardItem cardItem in _card){
+      totalItemCount += cardItem.quality;
+    }
+    return totalItemCount;
+}
 
 //clear card
+void clearCard(){
+    _card.clear();
+    notifyListeners();
+}
 
 /*
 
@@ -368,7 +432,4 @@ class Restaurant extends ChangeNotifier{
 //generate a receipt
 //format double value into money
 //format list of addons into a string summary
-
-
-
 }

@@ -10,7 +10,7 @@ import 'package:food_delivery_app/models/food.dart';
 import 'package:food_delivery_app/pages/food_page.dart';
 import 'package:provider/provider.dart';
 
-import '../restaurant.dart';
+import '../models/restaurant.dart';
 
 
 class HomePage extends StatefulWidget {
